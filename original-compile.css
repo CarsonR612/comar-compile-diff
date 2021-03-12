@@ -520,8 +520,7 @@ textarea {
 .section {
     max-width: 1360px;
     padding: 0 20px;
-    margin: 0 auto;
-    clear: both
+    margin: 0 auto
 }
 
 .section.top_layer {
@@ -544,8 +543,7 @@ textarea {
 .breadcrumb {
     position: relative;
     width: 100%;
-    padding: 30px 0 10px 0;
-    background-color: #f1f1f1
+    padding: 30px 0
 }
 
 .breadcrumb ul {
@@ -789,7 +787,6 @@ a.read_more:before {
 }
 
 .sub_menu,
-.sub-menu,
 .relative_form,
 .filter .short_form {
     -webkit-transition: all .6s;
@@ -1025,6 +1022,7 @@ header {
 }
 
 .menu .links ul {
+    position: relative;
     width: 100%;
     text-align: right;
     background: #fff;
@@ -1229,14 +1227,12 @@ header.fixed .menu .links ul li a {
 }
 
 .close_sub.active {
-    top: 25px
+    top: 15px
 }
 
-.sub_menu,
-.menu .links ul.sub-menu {
+.sub_menu {
     position: absolute;
     width: 100%;
-    margin: 0px;
     background: #1364ad;
     top: -100%;
     left: 0;
@@ -1245,12 +1241,11 @@ header.fixed .menu .links ul li a {
     z-index: -1
 }
 
-.menu .links .sub_menu a,
-.menu .links .sub-menu a {
+.menu .links .sub_menu a {
     text-transform: uppercase;
     color: #fff;
-    font-size: 12px;
-    padding: 26px 20px;
+    font-size: 13px;
+    padding: 26px 30px;
     display: inline-block
 }
 
@@ -1311,7 +1306,7 @@ header.fixed .menu .links ul li a {
     display: block;
     width: 100%;
     text-align: left;
-    margin-bottom: 5px
+    margin-bottom: 10px
 }
 
 .fast_links ul li a {
@@ -1376,7 +1371,7 @@ header.fixed .menu .links ul li a {
 }
 
 .main_slider {
-    position: relative;
+    position: fixed;
     z-index: 2;
     width: 100%;
     overflow: hidden;
@@ -2193,8 +2188,7 @@ header.fixed .menu .links ul li a {
 
 .certifications {
     position: relative;
-    width: 100%;
-    clear: both
+    width: 100%
 }
 
 .certifications .wrapper {
@@ -4345,8 +4339,7 @@ span.error {
         background: #1364ad;
         color: #fff
     }
-    .menu .links ul li:hover .sub_menu,
-    .menu .links ul li:hover .sub-menu {
+    .menu .links ul li:hover .sub_menu {
         top: 100%;
         visibility: visible;
         opacity: 1
@@ -4432,8 +4425,7 @@ span.error {
         color: #353535;
         background: #a9a9a9
     }
-    .menu .links .sub_menu a:hover,
-    .menu .links .sub-menu a:hover {
+    .menu .links .sub_menu a:hover {
         background: #005097
     }
     .text ul li span a:hover,
@@ -4461,7 +4453,12 @@ span.error {
     }
     .block,
     .block .element {
-        /*visibility:hidden;opacity:0;-webkit-transform:translate(0, 90px);-o-transform:translate(0, 90px);-ms-transform:translate(0, 90px);transform:translate(0, 90px)*/
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translate(0, 90px);
+        -o-transform: translate(0, 90px);
+        -ms-transform: translate(0, 90px);
+        transform: translate(0, 90px)
     }
     .block .element {
         visibility: hidden;
@@ -4620,8 +4617,7 @@ span.error {
     .top_menu ul {
         padding: 0
     }
-    .sub_menu,
-    .sub-menu {
+    .sub_menu {
         position: relative;
         z-index: 1;
         visibility: visible;
@@ -4631,13 +4627,11 @@ span.error {
         max-height: 0;
         overflow: hidden
     }
-    .menu .links .sub_menu a,
-    .menu .links .sub-menu a {
+    .menu .links .sub_menu a {
         display: block;
         padding: 15px
     }
-    .menu .links ul li.opened .sub_menu,
-    .menu .links ul li.opened .sub-menu {
+    .menu .links ul li.opened .sub_menu {
         max-height: 500px
     }
     .no_mobile {
@@ -5308,7 +5302,7 @@ span.error {
 }
 
 .more {
-    height: auto;
+    height: 92px;
     line-height: 20px
 }
 
@@ -5361,8 +5355,7 @@ span.error {
     -moz-transition: .5s opacity ease-in-out;
     -ms-transition: .5s opacity ease-in-out;
     -o-transition: .5s opacity ease-in-out;
-    transition: .5s opacity ease-in-out;
-    height: 0
+    transition: .5s opacity ease-in-out
 }
 
 .more .view_more,
